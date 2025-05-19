@@ -20,9 +20,9 @@ ul.addEventListener('click',function(event){
     }
     });
     function saveData(){
-        localStorage.setItem("data",listContainer.innerHTML);
+        localStorage.setItem("data",ul.innerHTML);
     }
     function displayData(){
-        listContainer.innerHTML=localStorage.getItem("data");
+        ul.innerHTML=localStorage.getItem("data");
     }
     displayData();
